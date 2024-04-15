@@ -1,8 +1,21 @@
-<p>mainmeny works!</p>
-<nav>
+<div id="menu_div">
+    <a routerLink="/" id="logo"><img src="../../assets/placeholder logo.svg" alt="Logotyp"></a>
+<nav id="pc_nav">
     <ul>
         <li><a routerLink="/">Startisda</a></li>
         <li><a routerLink="/about">Om webbsidan</a></li>
         <li><a routerLink="/trivia">Kinesisk trivia</a></li>
     </ul>
 </nav>
+<button type="button" id="open_menu"><img src="../../assets/bars-solid.svg" alt="öppna navigeringsmeny"></button>
+<div id="mobile_menu">
+    <button id="close_menu"><img src="../../assets/xmark-solid.svg" alt="stäng navigeringsmeny"></button>
+    <nav>
+        <ul>
+            <li><a routerLink="/"><span>Startisda</span></a></li>
+            <li><a routerLink="/about"><span>Om webbsidan</span></a></li>
+            <li><a routerLink="/trivia"><span>Kinesisk trivia</span></a></li>
+        </ul>
+    </nav>
+</div>
+</div>
