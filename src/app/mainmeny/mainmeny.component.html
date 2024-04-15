@@ -7,14 +7,14 @@
         <li><a routerLink="/trivia">Kinesisk trivia</a></li>
     </ul>
 </nav>
-<button type="button" id="open_menu"><img src="../../assets/bars-solid.svg" alt="öppna navigeringsmeny"></button>
+<button type="button" id="open_menu" (click)="openMenu()"><img src="../../assets/bars-solid.svg" alt="öppna navigeringsmeny"></button>
 <div id="mobile_menu">
-    <button id="close_menu"><img src="../../assets/xmark-solid.svg" alt="stäng navigeringsmeny"></button>
+    <button id="close_menu" (click)="closeMenu()"><img src="../../assets/xmark-solid.svg" alt="stäng navigeringsmeny"></button>
     <nav>
         <ul>
-            <li><a routerLink="/"><span>Startisda</span></a></li>
-            <li><a routerLink="/about"><span>Om webbsidan</span></a></li>
-            <li><a routerLink="/trivia"><span>Kinesisk trivia</span></a></li>
+            <li><a routerLink="/" (click)="closeMenu()"><span>Startisda</span></a></li>
+            <li><a routerLink="/about" (click)="closeMenu()"><span>Om webbsidan</span></a></li>
+            <li><a routerLink="/trivia" (click)="closeMenu()"><span>Kinesisk trivia</span></a></li>
         </ul>
     </nav>
 </div>
