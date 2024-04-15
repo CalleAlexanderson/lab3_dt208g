@@ -2,16 +2,71 @@
 
 <h1>Lite kinesisk trivia</h1>
 
-<article>
-    <h2>Konvertera mått och valuta</h2>
-    <article>
-        <h3>Konvertera kg till 斤(catty)</h3>
-        <div>
-            <h4></h4>
-        </div>
-            <button></button>
-        <div>
-
-        </div>
-    </article>
-</article>
+<main>
+    <section>
+        <article>
+            <h2>Varför?</h2>
+            <p>Jag har fått ett intresses i kinesisk kultur och har börjat lära mig lite
+                kinesisk på fritiden som en följd av det. <br>Jag gjorde det till temat på den här undersidan för jag
+                hade ingen bättre ide.
+            </p>
+        </article>
+        <article>
+            <h2>Vanliga/användbara ord i Mandarin Chinese</h2>
+            <p>Mandarin skrivs i traditionell eller simplifierad version och delas upp i två delar: Pinyin, sättet de
+                olika bokstäverna uttalas och Hanzi, hur de skrivs</p>
+            <ul>
+                <li>Jag - 我 (wǒ)</li>
+                <li>Min - 我的 (wǒ de)</li>
+                <li>Du - 你 (nǐ)</li>
+                <li>Han - 他 (tā)</li>
+                <li>Hon - 她 (tā)</li>
+                <li>Det - 它 (tā)</li>
+                <li>Hej - 嘿 (hēi)</li>
+                <li>Trevligt att träffa dig - 很高兴认识你 (Hěn gāoxìng rènshí nǐ)</li>
+                <li>Tack - 谢谢 (xiè xie)</li>
+                <li>Förstår du engelska? - 你会说英语吗？(Nǐ huì shuō Yīngyǔ ma)</li>
+            </ul>
+        </article>
+        <article>
+            <h2>Några intressanta högtider</h2>
+            <article>
+                <h3>Qingming Festival</h3>
+                <p>Sker antingen den fjärde eller femte april och kallas även "Tomb-Sweeping Day". Under dagen går
+                    familjer ut och städar kring deras döda släktingars gravar samt ställer offergåvor på gravarna.</p>
+            </article>
+            <article>
+                <h3>520</h3>
+                <p>Sker den tjugonde maj och är en andra inofficiell alla hjärtans dag. Den firas den tjugonde maj
+                    eftersom 520 uttalas väldigt likt till "Wo Ai Ni" vilket betyder "I Love You" på kinesiska</p>
+            </article>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h2>Konvertera mått och valuta</h2>
+            <article>
+                <h3>Konvertera kg till 斤(catty)</h3>
+                <div>
+                    <label for="gMass">kg</label><br>
+                    <input type="text" id="gMass" name="gMass" [(ngModel)]="gMass" (keyup)="massConversionG()">
+                </div>
+                <div>
+                    <label for="cMass">斤(catty)</label><br>
+                    <input type="text" id="cMass" name="cMass" [(ngModel)]="cMass" (keyup)="massConversionC()">
+                </div>
+            </article>
+            <article>
+                <h3>Konvertera SEK(kronor) till RMB(Renminbi)/CNY(Yuan)</h3>
+                <div>
+                    <label for="sek">SEK(kronor)</label><br>
+                    <input type="text" id="sek" name="sek" [(ngModel)]="sMoney"  (keyup)="moneyConversionSEK()">
+                </div>
+                <div>
+                    <label for="cny">RMB(Renminbi)/CNY(Yuan)</label><br>
+                    <input type="text" id="cny" name="cny" [(ngModel)]="cMoney"  (keyup)="moneyConversionCNY()">
+                </div>
+            </article>
+        </article>
+    </section>
+</main>
