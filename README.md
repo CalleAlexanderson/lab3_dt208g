@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Mitt arbete
+
+Jag har skapat en webbsida med hjälp av Angular 17, webbsidan har 3 undersidor och består av 4 komponenter. En av komponenterna fungerar som startsida då jag inte använder mig av index.html, jag har med hjälp av app.routes.ts ändrat så att när användaren söker på webbplatsen skickas hen vidare till home.component.html istället för det vanliga index.html. 
+
+En annan komponent fungerar som en sida där jag skrivt om mitt arbete och den tredje undersidan är också en komponent och där ligger det lite kinesiska trivia och ger också använmdaren möjlighet att konvertera kg till kinesiska catty samt konvertera sek till cny.
+
+Jag har använt SASS (SCSS) för styling och har försökt hålla mig så gått det går med avgränsning av styling till de relevanta filerna (global, components, enskild component).
