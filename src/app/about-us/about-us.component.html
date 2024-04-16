@@ -1,1 +1,42 @@
 <p>about-us works!</p>
+
+<h1>Om webbsidan</h1>
+
+<main>
+    <section>
+        <h2>Hur uppgiften lösts</h2>
+        <article>
+            <h3>Angular</h3>
+            <p>
+                Jag har använt angular för att bygga dessa webbsidor, detta har jag installerat med hjälp av NodeJS.
+                <br>
+                Jag använde mig av TypeScript som programmeringsspråk och SCSS för att style:a min webbsida.
+
+            </p>
+        </article>
+        <article>
+            <h3>Arbetsporcessen</h3>
+            <p>Jag har använt angular components när jag jobbat med denna webbsida, jag har skapat fyra olika
+                komponenter: abouts-us (denna sida), home (index sidan), mainmeny (en komponent som infogats på de andra
+                undersidorna) och unit-convertion (sidan med kinesisk trivia)</p>
+            <p>
+                Jag har försökt mitt bästa att ha en så pass logisk uppdelning av mina filer som möjligt, allting som
+                har att göra med en specifik komponent ligger i samma mapp och de saker som bestämmer utseende för flera
+                filer har jag lagt i antingen den globala fil för stil (styles.scss) eller filen som bestämmer stil för
+                alla komponenter (app.component.scss). Meny komponenten har jag lagt in i
+                alla sidor (komponenter) genom att lägga den i filen app.component.html som fungerar som en template
+                vilket alla komponenter bygger sin html ifrån och sen lägger på det som ligger i varje komponents
+                enskilda html fil.
+            </p>
+        </article>
+    </section>
+    <article>
+        <h2>Vad jag lärt mig</h2>
+        <p>Jag har lärt mig hur arbetsflödet fungerar i Anuglar i alla fall till en viss nivå och jag kan se hur
+            användbart det är, bara sättet att kunna infoga komponenter som en global meny och inte behöva kopiera över
+            den till varje undersida på en webbsida är redan en väldigt bra quality of life tillägg. Jag gillar också
+            att jag kan använda routerlink för att gå till en annan sida utan att sidan laddar om, det ger mig lite mer
+            alternativ till nya ideer för nav menyer då jag nu varit fast lite i att bara använda en typ av nav meny (i
+            lite olika former) i princip alla mina projekt.</p>
+    </article>
+</main>
