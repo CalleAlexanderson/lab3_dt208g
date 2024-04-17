@@ -1,5 +1,3 @@
-<p>unit-convertion works!</p>
-
 <h1>Lite kinesisk trivia</h1>
 
 <main>
@@ -22,7 +20,8 @@
                 <li>Han - 他 (tā)</li>
                 <li>Hon - 她 (tā)</li>
                 <li>Det - 它 (tā)</li>
-                <li>Hej - 嘿 (hēi)</li>
+                <li>Hej - 嘿 (hēi)/ 你好(nǐ hǎo)</li>
+                <li>Ja - 好  (hǎo)</li>
                 <li>Trevligt att träffa dig - 很高兴认识你 (Hěn gāoxìng rènshí nǐ)</li>
                 <li>Tack - 谢谢 (xiè xie)</li>
                 <li>Förstår du engelska? - 你会说英语吗？(Nǐ huì shuō Yīngyǔ ma)</li>
@@ -36,7 +35,7 @@
                     familjer ut och städar kring deras döda släktingars gravar samt ställer offergåvor på gravarna.</p>
                     <picture>
                         <source srcset="../../assets/qingming.webp" type="image/webp" />
-                        <img src="../../assets/qingming.jpg" alt="dekorerad grav under qingming festivalen" />
+                        <img src="../../assets/qingming.jpg" alt="dekorerad grav under qingming festivalen" id="qingming"/>
                       </picture>
             </article>
             <article>
@@ -46,14 +45,13 @@
             </article>
         </article>
     </section>
-    <section>
-        <article>
+        <article  id="convert">
             <h2>Konvertera mått och valuta</h2>
             <article>
                 <h3>Konvertera kg till 斤(catty)</h3>
                 <div>
                     <label for="gMass">kg</label><br>
-                    <input type="text" id="gMass" name="gMass" [(ngModel)]="gMass" (keyup)="massConversionG()">
+                    <input type="text" id="gMass" name="gMass" [(ngModel)]="gMass" (keyup)="massConversionG()"> 
                 </div>
                 <div>
                     <label for="cMass">斤(catty)</label><br>
@@ -61,16 +59,15 @@
                 </div>
             </article>
             <article>
-                <h3>Konvertera SEK(kronor) till RMB(Renminbi)/CNY(Yuan)</h3>
+                <h3>Konvertera SEK(kronor) till RMB(Renminbi)</h3>
                 <div>
                     <label for="sek">SEK(kronor)</label><br>
                     <input type="text" id="sek" name="sek" [(ngModel)]="sMoney"  (keyup)="moneyConversionSEK()">
                 </div>
                 <div>
-                    <label for="cny">RMB(Renminbi)/CNY(Yuan)</label><br>
+                    <label for="cny">RMB(Renminbi)</label><br>
                     <input type="text" id="cny" name="cny" [(ngModel)]="cMoney"  (keyup)="moneyConversionCNY()">
                 </div>
             </article>
         </article>
-    </section>
 </main>
