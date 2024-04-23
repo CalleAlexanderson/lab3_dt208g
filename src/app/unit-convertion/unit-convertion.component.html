@@ -69,5 +69,27 @@
                     <input type="text" id="cny" name="cny" [(ngModel)]="cMoney"  (keyup)="moneyConversionCNY()">
                 </div>
             </article>
+            <article>
+                <h3>Konvertera meter till fot</h3>
+                <div>
+                    <label for="mlength">meter</label><br>
+                    <input type="text" id="mlength" name="mlength" [(ngModel)]="mlength" (keyup)="lengthConversionM()"> 
+                </div>
+                <div>
+                    <label for="flength">fot</label><br>
+                    <input type="text" id="flength" name="flength" [(ngModel)]="flength" (keyup)="lengthConversionF()">
+                </div>
+            </article>
+            <article>
+                <h3>Konvertera celsius till fahrenheit</h3>
+                <div>
+                    <label for="ctemp">celsius</label><br>
+                    <input type="text" id="ctemp" name="ctemp" [(ngModel)]="ctemp"  (keyup)="tempConversionC()">
+                </div>
+                <div>
+                    <label for="ftemp">fahrenheit</label><br>
+                    <input type="text" id="ftemp" name="ftemp" [(ngModel)]="ftemp"  (keyup)="tempConversionF()">
+                </div>
+            </article>
         </article>
 </main>

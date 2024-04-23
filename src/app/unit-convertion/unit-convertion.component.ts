@@ -14,6 +14,10 @@ export class UnitConvertionComponent {
   cMass: number = 0;
   sMoney: number = 0;
   cMoney: number = 0;
+  mlength: number = 0;
+  flength: number = 0;
+  ctemp: number = 0;
+  ftemp: number = 32;
   massConversionG():void{
     this.cMass = this.gMass*2;
   }
@@ -28,5 +32,21 @@ export class UnitConvertionComponent {
 
   moneyConversionCNY():void{
     this.sMoney = this.cMoney*1.5;
+  }
+
+  lengthConversionM():void{
+    this.flength = this.mlength*3.281;
+  }
+
+  lengthConversionF():void{
+    this.mlength = this.flength*0.305;
+  }
+
+  tempConversionC():void{
+    this.ftemp = 32 + (this.ctemp * 1.8);
+  }
+
+  tempConversionF():void{
+    this.ctemp = (this.ftemp*0.556) - 17.778;
   }
 }
